@@ -9,10 +9,13 @@ As a front end developer, you need to build a responsive web page which has mult
 Problem Statement
 Create a responsive web page for an event management company so that the users can use it on a mobile or desktop device.​ The web page should resemble the images as shown below.
 Desktop View
+
 ![Design-Conference](https://github.com/tayademeenakashi5/Event-Management-webpage/assets/85633773/2346628e-d1e3-4902-9361-55e27d28426a)
 
 
 Mobile View
+
+
 ![Design-Conference-Mobile](https://github.com/tayademeenakashi5/Event-Management-webpage/assets/85633773/8fa73df6-f197-4f9b-b511-edee8ba3c0be)
 
 

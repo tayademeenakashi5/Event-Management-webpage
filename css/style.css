@@ -1,0 +1,266 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+nav img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+/* Global styles */
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    background-color: rgb(234, 229, 219);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section 1: Header with a nav bar */
+header {
+    background-color: #45484a;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px; /* Add margin from the right side */
+}
+
+nav img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 171, 229);
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+    nav {
+        margin-right: 10px;
+    }
+}
+
+/* Section 2: Single column Hero Unit */
+.hero-unit {
+    background: url("../images/banner.jpg") no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+    font-size: 36px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #45484a;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(171, 171, 229);
+}
+
+/* Section 3: Main section with three columns */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.card {
+    width: 300px;
+    background-color: rgb(234, 229, 219);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 8px grey;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+    border-radius: 80%;
+    /*width: 100%;
+    margin-bottom: 20px;*/
+}
+
+.card h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #444;
+}
+
+/* Section 4: Footer with social media links */
+.footer {
+    background-color: #26272b;
+    color: #737373;
+    padding: 30px 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.footer h3 {
+    color: wheat;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer-grid > div {
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-details li i {
+    margin-right: 10px;
+    color: #737373;
+}
+
+.contact-details li i:before {
+    font-weight: bold;
+}
+
+.contact-details li:last-child {
+    margin-bottom: 0;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons a {
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #737373;
+    font-size: 20px;
+    display: inline-block; /* Add this line */
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .footer-grid {
+        display: block;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
